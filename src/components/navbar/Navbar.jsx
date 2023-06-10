@@ -10,29 +10,29 @@ const links=[
     {
         id: 2,
         title: "Portfolio",
-        url: "/",  
+        url: "/portfolio",  
     },
     {
         id: 3,
         title: "Blog",
-        url: "/",  
+        url: "/blog",  
     },
     {
         id: 4,
         title: "About",
-        url: "/",  
+        url: "/about",  
     },
     {
         id: 5,
         title: "Contacts",
-        url: "/",  
+        url: "/contacts",  
     },
 
     {
         id: 6 ,
         title: "Dashboard",
-        url: "/",  
-    },
+        url: "/dashboard",  
+    }
 ]
 
 const Navbar = () => {
@@ -40,9 +40,9 @@ const Navbar = () => {
     <div>
         <Link href="/">maow</Link>
         <div>
-            {links.map(link=>{
+            {links.map(link=>(
                 <Link key={link.id} href={link.url}>{link.title}</Link>
-            })}
+            ))}
         </div>
     </div>
  
