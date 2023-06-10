@@ -41,7 +41,7 @@ const Navbar = () => {
         <Link href="/">maow</Link>
         <div>
             {links.map(link=>{
-                <Link key={link.id} href={link.href}>{link.title}</Link>
+                <Link key={link.id} href={link.url}>{link.title}</Link>
             })}
         </div>
     </div>
