@@ -1,0 +1,6 @@
+{
+  "breadcrumbs.icons": true,
+  "outline.icons": true,
+  "workbench.iconTheme": "vscode-icons",
+  "terminal.integrated.tabs.defaultColor": null
+}
