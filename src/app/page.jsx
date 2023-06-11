@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import Hero from 'public/maowmain.jpeg';
+import Hero from 'public/ovelha.jpg';
+import Button from '@/components/Button/Button';
 
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
       <div className={styles.item}>
         <h1 className={styles.title}>Title of website</h1>
         <p className={styles.description}>text under the title of the website</p>
-        <button className={styles.button}>See More</button>
+        <Button url="/" text="Ver Mais">See more</Button>
       </div>
       <div className={styles.item}>
         <Image src={Hero} alt="" className={styles.img} />

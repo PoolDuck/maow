@@ -1,3 +1,52 @@
-.contacts{
-    background-color: brown;
+.container{
+
+}
+
+.title{
+    font-size: 60px;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    gap:100px;
+}
+
+.imgContainer{
+    flex:1;
+    height:300px;
+    position: relative;
+}
+
+.form{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    
+}
+
+.input, .textArea{
+    padding:20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color:white;
+    border:2px solid white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.image{
+object-fit: contain;
+animation: move 3s infinite ease alternate;
+}   
+
+@keyframes move {
+    from{
+        transform: translateY(-15px);
+    }
+    to{
+        transform: translateY(0px) scale(1.03);
+    }
 }

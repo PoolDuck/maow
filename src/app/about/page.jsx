@@ -1,12 +1,13 @@
 import React from 'react'
 import styles from './page.module.css'
 import Image from 'next/image'
+import Button from '@/components/Button/Button'
 const About = () => {
   return (
     <div className={styles.container}>
       <div className={styles.imgContainer}>
         <Image 
-          src="/public/ratings.png"
+          src="/ratings.jpg"
           fill={true}
           alt=""
           className={styles.img}
@@ -26,6 +27,7 @@ const About = () => {
         <div className={styles.item}>
           <h1 className={styles.title}>Title</h1>
           <p className={styles.desc}>description bla bla bla</p>
+          <Button url="/contacts" text="Contact" />
         </div>
       </div>
     
