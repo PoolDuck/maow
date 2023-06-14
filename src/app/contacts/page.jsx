@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './page.module.css'
 import Image from 'next/image'
+import Button from '@/components/Button/Button'
 
 const Contacts = () => {
   return (
@@ -24,6 +25,7 @@ const Contacts = () => {
               alt=""
               rows="10"
             />
+            <Button url="#" text="Send" />
           </form>
         </div>
     </div>

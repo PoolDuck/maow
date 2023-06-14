@@ -17,6 +17,22 @@ a{
   color: inherit;
 }
 
+.theme{
+  transition: 1.5s all ease;
+}
+
+.light{
+  background-color: white;
+  color:black;
+  
+}
+
+
+.dark{
+  background-color: black;
+  color:white;
+}
+
 .container{
  max-width: 1366px;
  min-height: 100vh;

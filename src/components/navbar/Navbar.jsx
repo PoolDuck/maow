@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import React from 'react'
 import styles from './page.module.css'
+import DarkModeToggle from '../DarkModeToggle/DarkModeToggle'
 
 const links=[
     {
@@ -41,12 +42,22 @@ const links=[
 const Navbar = () => {
   return (
     <div className={styles.container}>
-        <Link href="/" className={styles.logo}>maow</Link>
+        <Link href="/" className={styles.logo}>
+            maow
+        </Link>
         <div className={styles.links}>
+            <DarkModeToggle />
             {links.map(link=>(
-                <Link key={link.id} href={link.url}>{link.title}</Link>
+                <Link key={link.id} href={link.url} className='link'>{link.title}</Link>
             ))}
-                    <button className={styles.logout} onClick="test">Logout</button>
+            <button 
+                className={styles.logout} 
+                onClick={()=> {
+                    console.log("Logged out");
+                }}
+            >
+                Logout
+            </button>
 
         </div>
     </div>
